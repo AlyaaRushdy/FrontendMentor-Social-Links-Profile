@@ -7,7 +7,12 @@
   box-sizing: border-box;
 }
 img {
+  width: auto;
+  height: auto;
   display: block;
+}
+a:any-link {
+  color: var(--White);
 }
 
 /* || VARIABLES */
@@ -28,6 +33,74 @@ img {
   --bold-font-weight: 700;
 }
 
+/* || GENERAL STYLING */
+body {
+  min-height: 100vh;
+  font: var(--normal-font-weight) var(--font-size) var(--font-family);
+  text-align: center;
+  color: var(--White);
+  background-color: var(--Off-Black);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* || Card Styling */
+.card {
+  width: clamp(19rem, 88vw, 24rem);
+  background-color: var(--Dark-Grey);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.card__article {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.card__article__img {
+  width: 33%;
+  border-radius: 50%;
+  margin: auto;
+}
+.card__article__h1 {
+  font-size: 1.5rem;
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 0.5rem;
+}
+.card__article__h2 {
+  font-size: var(--font-size);
+  font-weight: var(--semibold-font-weight);
+  color: var(--primary-green);
+}
+
+/* || List Styling */
+.card__ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  list-style: none;
+}
+.card__ul__li {
+  background-color: var(--Grey);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card__ul__li a {
+  display: inline-block;
+  width: 100%;
+  font-weight: var(--semibold-font-weight);
+  text-decoration: none;
+  padding: 0.8rem 0;
+}
+.card__ul__li a:hover,
+.card__ul__li a:focus {
+  color: var(--Off-Black);
+  background-color: var(--primary-green);
+}
+
 /* Footer Styling */
 .footer {
   position: absolute;
@@ -36,4 +109,13 @@ img {
 }
 .footer a {
   color: var(--footer-link);
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    padding: 2.75rem 2.5rem;
+  }
+  .card__article {
+    gap: 1.75rem;
+  }
 }
