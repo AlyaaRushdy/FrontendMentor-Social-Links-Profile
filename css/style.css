@@ -111,7 +111,7 @@ body {
   color: var(--footer-link);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
   .card {
     padding: 2.75rem 2.5rem;
   }
