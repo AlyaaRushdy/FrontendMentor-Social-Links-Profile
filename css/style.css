@@ -1,7 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+
 /* || VARIABLES */
 :root {
   /* || COLORS */
+  --primary-green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
   --footer-link: hsl(228, 45%, 44%);
+
+  /* || TYPOGRAPHY */
+  --font-size: 14px;
+  --font-family: "Inter", sans-serif;
+  --normal-font-weight: 400;
+  --semibold-font-weight: 600;
+  --bold-font-weight: 700;
 }
 
 /* Footer Styling */
